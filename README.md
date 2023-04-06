@@ -34,3 +34,8 @@ https://www.freecodecamp.org/news/how-to-enable-live-reload-on-docker-based-appl
 ### Consequently, when creating the node_modules folder on the container, it won't create the folder on local machine environment. Run the command below in your terminal to create it:
 
 - docker volume create --name nodemodules
+
+
+### SETUP COMMANDS
+docker-compose up --build
+docker-compose down

@@ -2,13 +2,14 @@
   "name": "nodejs-docker-poc",
   "version": "1.0.0",
   "description": "<img src=https://i.imgur.com/eDNZeqh.png alt='Swagger Page of that application' title='Swagger Page of that application'/>",
+  "main": "index.js",
   "scripts": {
     "build": "npx typescript",
     "build:watch": "npx typescript -w",
     "dev": "npx concurrently \"npm run build\" \"npm run dev:run\"",
     "dev:watch": "npx concurrently \"npm run build:watch\" \"npm run dev:run\"",
-    "dev:run": "npx nodemon ./lib/index.js",
-    "start": "node ./lib/index.js",
+    "dev:run": "npx nodemon lib/index.js",
+    "start": "node lib/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
